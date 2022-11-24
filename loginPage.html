@@ -7,22 +7,23 @@
     <title>Login Page</title>
     <link rel="stylesheet" href="loginPage.css">
     <script src="https://kit.fontawesome.com/9d557a9fdd.js" crossorigin="anonymous"></script> 
-     <script src="loginPage.js"></script>
+    <script src="loginPage.js"></script>
 
     </head>
 <h1>Hi-Tech-ish</h1>
 <body>
+    
     <div class="loginForm">
         <form method="post" class="form " id="login">
             <h2>Login</h2>
             <div class="txt_field">
-                <input type="text" name="username"required>
+                <input type="text" onfocus="this.value=''"name="username"required>
                 <span></span>
                 <label>Username</label>
             </div>
             <br>
             <div class="txt_field">
-                <input type="password" name="password" required>
+                <input type="password" onfocus="this.value=''"name="password" required>
                 <span></span>
 
                 <label>Password</label>
@@ -36,19 +37,19 @@
     <form class ="form form--hidden"method="post" id="createAccount">
         <h2 class="form_title">Create Account<br>(Demo)</h2>
         <div class="txt_field">
-            <input id="createUsername" type="text" required>
+            <input id="createUsername" onfocus="this.value=''" type="text" required>
             <span></span>
             <label>Username</label>
         </div>
         <br>
         <div class="txt_field">
-            <input id="createPassword"type="password" required>
+            <input id="createPassword" onfocus="this.value=''" type="password" required>
             <span></span>
 
             <label>Password</label>
         </div>
         <div class="txt_field">
-            <input type="password" required>
+            <input type="password" onfocus="this.value=''" required>
             <span></span>
 
             <label>Confirm Password</label>
@@ -72,7 +73,7 @@
     <div class="followUs">
         <p>
    <span> Follow Us</span><br>
-   <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a> 
+    <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a> 
     <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
     <a href="#" class="facebook"><i class="fa-brands fa-square-facebook"></i></a>
     <a href="#" class="discord"><i class="fa-brands fa-discord"></i></a>
