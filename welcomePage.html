@@ -12,13 +12,14 @@
     <h1 id="heading">Welcome!</h1>
 </header>
 <body>
-    <img src="./images/user portrait.jpg"
+    <div class="photo">
+    <img id="monkey" src="./images/user portrait.jpg"
         width="200"
-        height="300"/>
-    <h3 id="explain">Before starting your <u>new journal</u>, enter the date first.</h3><br>
+        height="300"/></div>
 
-    <div id="dateEnter">
-    <lable for="month">Date: MM</lable>
+    <div class="dateEnter">
+    <h3 id="explain">Before starting your <u>new journal</u>, enter the date first.</h3><br>
+    <label for="month">Date: MM</label>
         <select name="opt">
             <option value="1">Jan.</option>
             <option value="2">Feb.</option>
@@ -33,7 +34,7 @@
             <option value="11">Nov.</option>
             <option value="12">Dec.</option>
         </select>
-    <lable for="date">DD</lable>
+    <label for="date">DD</label>
         <select name="opt">
             <option value="1">1</option>
             <option value="2">2</option>
@@ -67,9 +68,9 @@
             <option value="30">30</option>
             <option value="31">31</option>
         </select>
-    <lable for="Year">YY</lable> <input type = "year"><br><br>
+    <label for="Year">YY</label> <input type = "year"><br><br>
         
-    <button onclick="journalPageSwitch()">Create</button>
+    <button id="createButton" onclick="journalPageSwitch()">Create</button>
     </div><br>
 
     <p>
