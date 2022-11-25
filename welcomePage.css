@@ -4,8 +4,10 @@ header {
 }
 
 .monkey{
+    position:absolute;
     overflow:hidden;
-
+    float:left;
+    margin-left:500px;
 }
 
 body{
@@ -20,7 +22,7 @@ body{
     top:30%;
     left:50%;
     transform: translate(-50%,-50%);
-    width: 400px;
+    width: 450px;
     
 }
 button{
@@ -33,4 +35,35 @@ button{
     background-color: bisque;
     margin: 30px 0;
 
+}
+button:hover{
+    background-color: blanchedalmond;
+}
+
+.dropbtn{
+    text-align: middle;
+    margin-top: 100px;
+    margin-right: 50px;
+    width:75px;
+    height:50px;
+    padding: 16px;
+    font-size:16px;
+    float:right;
+}
+
+.dropbtn:hover, .dropbtn:focus{
+    background-color: blanchedalmond;
+}
+#dropdown{
+    position:relative;
+    display:inline-block;
+    top:30%;
+    right:25%;
+
+}
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    min-width:160px;
 }
