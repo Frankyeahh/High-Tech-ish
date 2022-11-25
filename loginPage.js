@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded",() =>{
         createAccountForm.classList.add("form--hidden");
     });
 });
-//This is just fun trying store username and password into local storage,
+//This is just fun trying to store username and password into local storage,
 //My intention was to use tools like php or sql, but since it's not allowed so I give up.
 function createButton(){
     var userInfo =[];
