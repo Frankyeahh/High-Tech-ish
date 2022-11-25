@@ -18,10 +18,42 @@ document.addEventListener("DOMContentLoaded",() =>{
 });
 //This is just fun trying to store username and password into local storage,
 //My intention was to use tools like php or sql, but since it's not allowed so I give up.
-function createButton(){
-    var userInfo =[];
-    
+function signup(e){
+    event.preventDefault();
+    var username = document.getElementById('createUsername').value;
+    var password= document.getElementById('createPassword').value;
 
-    localStorage.setItem('userCredentials',JSON.stringify(userInfo));
+    var user = {
+        username: username,
+        password: password,
+    };
+
+    var json = JSON.stringify(user);
+    localStorage.setItem(username,json);
+    console.log("successfully registered!");
+
 }
+
+function loginfunc(e){
+    event.preventDefault();
+
+    var username = document.getElementById("Username").value;
+    var password= document.getElementById("Password").value;
+
+    var user = localStorage.getItem(username);
+    var data = JSON.parse(user);
+    console.log(data);
+    
+  
+     if(user == null){
+        alert("wrong username or password")
+    }
+    else if(username== data.username && password == data.password){
+        window.location.href="welcomePage.html";
+    }
+    else(
+        alert("wrong username or password")
+    )
+}
+
 
