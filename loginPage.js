@@ -16,8 +16,7 @@ document.addEventListener("DOMContentLoaded",() =>{
         createAccountForm.classList.add("form--hidden");
     });
 });
-//This is just fun trying to store username and password into local storage,
-//My intention was to use tools like php or sql, but since it's not allowed so I give up.
+
 function signup(e){
     event.preventDefault();
     var username = document.getElementById('createUsername').value;
@@ -30,7 +29,7 @@ function signup(e){
 
     var json = JSON.stringify(user);
     localStorage.setItem(username,json);
-    console.log("successfully registered!");
+    alert("successfully registered!");
 
 }
 
