@@ -2,6 +2,15 @@
     margin:0;
     padding:0;
 }
+
+p{
+  text-decoration: underline;
+}
+
+#mydata{
+  text-decoration:none;
+  
+}
 header {
     text-align: center;
 
@@ -45,11 +54,11 @@ button:hover{
 }
 
 .dropbtn {
-    background-color: bisque;
+    background-color: rgb(246, 185, 71);
     color: #adadad;
     padding: 25px;
     font-size: 20px;
-    border: none;
+    border: 2px;
     cursor: pointer;
   }
   
@@ -89,3 +98,9 @@ button:hover{
   .dropdown-content a:hover {background-color: #ddd;}
   
   .show {display:block;}
+
+  .journals{
+    display:flex;
+    gap: 100px;
+    left:10%;
+  }

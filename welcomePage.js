@@ -1,5 +1,9 @@
 function journalPageSwitch(){
-    
+    window.location.href="journalPage.html";
+}
+function loginPage(){
+    window.location.href="loginPage.html";
+
 }
 
 function dropdown() {
@@ -19,3 +23,21 @@ function dropdown() {
         }
       }
     } 
+
+   function myFunction(){
+      var p =document.getElementById("mydata");
+      p.innerHTML =getDate();
+    }
+
+    function getDate(){
+      var months=['Jan.','Feb.','Mar.','Aprl.','May.','Jun.','Jul.','Aug.','Sept.','Nov.','Dec.'];
+      var days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+      var d= new Date()
+      
+      var result="Today's Date: "+months[d.getMonth()]+" "+d.getDate()+", "+d.getFullYear()+"("+days[d.getDay()]+").";
+      return result;
+    }
+    
+    function changeTheme(){
+
+    }

@@ -12,6 +12,8 @@
     <h1 id="heading">Welcome!</h1>
 </header>
 <body>
+<div id="BackgroundArea">
+    <p>Hello, my loyalty user!</p>
     <div class="photo">
     <img id="monkey" src="./images/user portrait.jpg"
         width="200"
@@ -20,72 +22,43 @@
     <div class="dropdown">
         <button onclick="dropdown()" class="dropbtn">≡</button>
         <div id="myDropdown" class="dropdown-content">
-            <a href="#">Login Page</a>
-            <a href="#">Journal Page</a>
-            <a href="#">Theme</a>
+            <a href="#" onclick="loginPage()">Login Page</a>
+            <a href="#" onclick="journalPageSwitch()">Journal Page</a>
+            <a href="#" onclick="changeTheme()">Theme</a>
         </div>
     </div>
 
     <div class="dateEnter">
     <h3 id="explain">Before starting your <u>new journal</u>, enter the date first.</h3><br>
-    <label for="month">Date: MM</label>
-        <select name="opt">
-            <option value="1">Jan.</option>
-            <option value="2">Feb.</option>
-            <option value="3">Mar.</option>
-            <option value="4">Apr.</option>
-            <option value="5">May.</option>
-            <option value="6">Jun.</option>
-            <option value="7">Jul.</option>
-            <option value="8">Aug.</option>
-            <option value="9">Sep.</option>
-            <option value="10">Oct.</option>
-            <option value="11">Nov.</option>
-            <option value="12">Dec.</option>
-        </select>
-    <label for="date">DD</label>
-        <select name="opt">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-            <option value="13">13</option>
-            <option value="14">14</option>
-            <option value="15">15</option>
-            <option value="16">16</option>
-            <option value="17">17</option>
-            <option value="18">18</option>
-            <option value="19">19</option>
-            <option value="20">20</option>
-            <option value="21">21</option>
-            <option value="22">22</option>
-            <option value="23">23</option>
-            <option value="24">24</option>
-            <option value="25">25</option>
-            <option value="26">26</option>
-            <option value="27">27</option>
-            <option value="28">28</option>
-            <option value="29">29</option>
-            <option value="30">30</option>
-            <option value="31">31</option>
-        </select>
-    <label for="Year">YY</label> <input type = "year"><br><br>
-        
+        <div id="box">
+            <p id="mydata" class="newdata"><strong>Today's Date:</strong></p>
+            <button onclick="myFunction()">Click here</button>
+        </div>
+    <p>Now you can start your journal by clicking the following create button.</p>
     <button id="createButton" onclick="journalPageSwitch()">Create</button>
     </div><br>
 
     <p>
-        Recent journal:
+        Recent journals:<br>
+        <div class="journals">
+            <img id="journal1" src="./images/journal 1.png"
+            width="215"
+            height="300"/>
+            <img id="journal2" src="./images/journal 2.png"
+            width="215"
+            height="300"/>
+            <img id="journal3" src="./images/journal 3.png"
+            width="215"
+            height="300"/>
+            <img id="journal4" src="./images/journal 4.png"
+            width="215"
+            height="300"/>
+            <img id="journal5" src="./images/journal 5.png"
+            width="215"
+            height="300"/>
+        </div>
     </p>
-
+</div>
 </body>
 
 </html>
