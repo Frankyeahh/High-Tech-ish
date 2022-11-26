@@ -15,7 +15,7 @@ button{
     height: 40px;
     border-radius: 20px;
     font-size: 17px;
-    color:black;
+    color:rgb(123, 143, 170);;
     background-color: bisque;
     margin: 30px;
     
@@ -46,6 +46,7 @@ h1{
     font-style: italic;
 }
 .d{
+
     font-size: 25px;
     font-weight: bold;
     margin: 0%;
