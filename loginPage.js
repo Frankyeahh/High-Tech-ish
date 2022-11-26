@@ -31,6 +31,8 @@ function signup(e){
     var json = JSON.stringify(user);
     localStorage.setItem(username,json);
     alert("successfully registered!");
+    window.location.reload();
+
 
 }
 
