@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded",() =>{
         loginForm.classList.remove("form--hidden");
         createAccountForm.classList.add("form--hidden");
     });
+    
 });
 
 function signup(e){
@@ -42,8 +43,7 @@ function loginfunc(e){
     var user = localStorage.getItem(username);
     var data = JSON.parse(user);
     console.log(data);
-    
-  
+      
      if(user == null){
         alert("wrong username or password")
     }
@@ -54,5 +54,4 @@ function loginfunc(e){
         alert("wrong username or password")
     )
 }
-
 
