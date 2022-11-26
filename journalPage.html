@@ -5,33 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Journal Page</title>
-    <link href="journalPage.css"></link>
+    <link rel="stylesheet" href="journalPage.css">
     <script src="journalPage.js"></script>
 </head>
 <body>
-    <form name="form2"  method="post" enctype="text/plain" >
-        <table id="table">
+        <table align="center">
             <tr> 
                 <td colspan="2"> 
-                    <div align="center"><h1>Journal Page</h1></div> 
+                    <h1>Journal Page</h1>
+                    <br> 
                 </td>
             </tr>
             <tr> 
-                <td>Date:<input type="text" name="textfield" size="10">/day </td>
-                <td><input type="text" name="textfield2" size="10" maxlength="20">/month</td>
-                <td><input type="text" name="textfield2" size="10" maxlength="20">/year </td>
-            </tr>
-            <tr> 
-                <td colspan="2"> 
-                    <div align="center">please write your journal here<br> 
-                        <textarea name="myTextInput" cols="100" rows="100"></textarea>
-                    </div>
-                </td>
-            </tr>
-          </table>
-          <button onclick="function0()">save</button>
-          <button onclick="function1()">log out</button>
-                <p>Change languages here:</p>
+                <p>Change languages here: </p>
                 <div id="google_translate_element"></div>
         <!--this google translate api can not implement... I don't know why maybe another method-->
         <script type="text/javascript">
@@ -42,6 +28,31 @@
         
         <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         
+                <td class="form" >
+                    <div class="d">Date:  </div>
+                 <input type="text" name="textfield" size="10">/day
+                <input type="text" name="textfield2" size="10" >/month
+               <input type="text" name="textfield2" size="10" >/year 
+               </td>
+                    
+            </tr>
+            <tr> 
+                <td colspan="2"> 
+                    <br>
+                    <br>
+                    <div class="title1">please write your journal here:</div>
+                    <br> 
+                     <div>  <textarea class="textarea" name="myTextInput" cols="110" rows="80"></textarea>
+                    </div>
+                </td>
+            </tr>
+          </table>
+          <div class="button1">
+            
+          <button onclick="function0()">save</button>
+          <button onclick="function1()">log out</button>
+        </div>
+               
         
 </body>
 </html>
