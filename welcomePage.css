@@ -104,3 +104,16 @@ button:hover{
     gap: 100px;
     left:10%;
   }
+
+  
+
+  #img {
+    position:absolute;
+    top: 0;
+    width: 100%;
+    display: block;
+    overflow: auto;
+    bottom:0;
+    background-repeat: no-repeat;
+    z-index:-1;
+  }

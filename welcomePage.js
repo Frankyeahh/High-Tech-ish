@@ -38,6 +38,16 @@ function dropdown() {
       return result;
     }
     
-    function changeTheme(){
+    var image_array=[
+      'background.jpg',
+      'background2.jpg',
+    ];
 
+    
+    function changeTheme(){
+      random_index =Math.floor(Math.random()*image_array.length);
+
+      selected_image=image_array[random_index];
+
+      document.getElementById("img").src= `./images/${selected_image}`;
     }
