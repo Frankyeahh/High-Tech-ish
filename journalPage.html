@@ -1,12 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Journal Page</title>
+    <link rel="stylesheet" href="journalPage.css">
+    <script src="journalPage.js"></script>
 </head>
 <body>
-    
-</body>
-</html>
+    <div class="language">
+    <p>
+        Translate this page<br> in
+        your preferred language:
+    </p>
+    </div>
+    <div id="google_translate_element"></div>
+ 
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+ 
+    <script type="text/javascript"
+            src=
+"https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+    </script>
+        <table align="center">
+            <tr> 
+                <td colspan="2"> 
+                    <h1>Journal Page</h1>
+                    <br> 
+                </td>
+            </tr>
+            <tr>       
+                <td class="form" >
+                    <div class="d">Date:  </div>
+                 <input type="text" name="myTextInput" size="10">/DD(day)
+                <input type="text" name="myTextInput" size="10" >/MM(month)
+               <input type="text" name="myTextInput" size="10" >/YY(year)
+               </td>
+                    
+            </tr>
+            <tr> 
+                <td colspan="2"> 
+                    <br>
+                    <br>
+                    <div class="title1">please write your journal here:</div>
+                    <br> 
+                     <div>  <textarea class="textarea" name="myTextInput" cols="110" rows="80"></textarea>
+                    </div>
+                </td>
+            </tr>
+          </table>
+          <div class="button1">
+            
+          <button onclick="function0()">save</button>
+          <button onclick="function1()">log out</button>
+        </div>
+               
+        
