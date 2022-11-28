@@ -4,9 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Page</title>
+    <title>WelcomePage</title>
+    <script src="welcomePage.js"></script>
+    <link href="welcomePage.css" rel="stylesheet" type="text/css">    
 </head>
-<body>
-    Welcome
+<header>
+    <h1 id="heading">Welcome!</h1>
+</header>
+<body >
+<div id="BackgroundArea">
+    <img id="img"/>
+    <p>Hello, my loyalty user!</p>
+    <div class="photo">
+    <img id="monkey" src="./images/user portrait.jpg"
+        width="200"
+        height="300"/></div>
+
+    <div class="dropdown">
+        <button onclick="dropdown()" class="dropbtn">≡</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#" onclick="loginPage()">Login Page</a>
+            <a href="#" onclick="journalPageSwitch()">Journal Page</a>
+            <a href="#" onclick="changeTheme()">Theme</a>
+        </div>
+    </div>
+
+    <div class="dateEnter">
+    <h3 id="explain">Before starting your <u>new journal</u>, enter the date first.</h3><br>
+        <div id="box">
+            <p id="mydata" class="newdata"><strong>Today's Date:</strong></p>
+            <button onclick="myFunction()">Click here</button>
+        </div>
+    <p>Now you can start your journal by clicking the following create button.</p>
+    <button id="createButton" onclick="journalPageSwitch()">Create</button>
+    </div><br>
+
+    <p>
+        Recent journals:<br>
+        <div class="journals">
+            <img id="journal1" src="./images/journal 1.png"
+            width="215"
+            height="300"/>
+            <img id="journal2" src="./images/journal 2.png"
+            width="215"
+            height="300"/>
+            <img id="journal3" src="./images/journal 3.png"
+            width="215"
+            height="300"/>
+            <img id="journal4" src="./images/journal 4.png"
+            width="215"
+            height="300"/>
+            <img id="journal5" src="./images/journal 5.png"
+            width="215"
+            height="300"/>
+        </div>
+    </p>
+</div>
 </body>
+
 </html>
