@@ -9,13 +9,17 @@ function function0(){
 //myFormData.push(value1); //put to the array
 
 function function1(){
-    var ratingstar = prompt("rating stars please enter start number you want to give：(0-5)");
+    var ratingstar = parseInt(prompt("rating stars please enter start number you want to give：(0-5)"));
     //can not use popover to implement the option to select stars ? how to modify it?
-   if (ratingstar=5){
+    var star=5;
+    var a=0;
+   if(ratingstar>=a && ratingstar<star){
+        alert("Thanks we will improve more.");      
+   }else if(ratingstar==star){
     alert("Thanks for your high rating!");
-   }else{
-    alert("Thanks for your comments.We will improve more");
+   }else if(ratingstar>star || ratingstar<a){
+    alert("Please re-rate (0-5)");
    }
+
+
 }
-
-
