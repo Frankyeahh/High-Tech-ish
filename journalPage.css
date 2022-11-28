@@ -51,3 +51,9 @@ h1{
     font-weight: bold;
     margin: 0%;
 }
+.language{
+    font-size: 17px;
+    font-weight: bold;
+    color:darksalmon;
+    text-align: left;
+}

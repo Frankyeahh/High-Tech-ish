@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,28 @@
     <script src="journalPage.js"></script>
 </head>
 <body>
+    <div class="language">
+    <p>
+        Translate this page<br> in
+        your preferred language:
+    </p>
+    </div>
+    <div id="google_translate_element"></div>
+ 
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+ 
+    <script type="text/javascript"
+            src=
+"https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+    </script>
         <table align="center">
             <tr> 
                 <td colspan="2"> 
@@ -16,23 +38,12 @@
                     <br> 
                 </td>
             </tr>
-            <tr> 
-                <p>Change languages here: </p>
-                <div id="google_translate_element"></div>
-        <!--this google translate api can not implement... I don't know why maybe another method-->
-        <script type="text/javascript">
-        function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-        }
-        </script>
-        
-        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-        
+            <tr>       
                 <td class="form" >
                     <div class="d">Date:  </div>
-                 <input type="text" name="textfield" size="10">/DD(day)
-                <input type="text" name="textfield2" size="10" >/MM(month)
-               <input type="text" name="textfield2" size="10" >/YY(year)
+                 <input type="text" name="myTextInput" size="10">/DD(day)
+                <input type="text" name="myTextInput" size="10" >/MM(month)
+               <input type="text" name="myTextInput" size="10" >/YY(year)
                </td>
                     
             </tr>
