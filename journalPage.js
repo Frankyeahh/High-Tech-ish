@@ -20,6 +20,7 @@ function function1(){
    }else if(ratingstar>star || ratingstar<a){
     alert("Please re-rate (0-5)");
    }
+   window.location.href="loginPage.html";
 
 
 }
