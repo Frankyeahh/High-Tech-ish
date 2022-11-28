@@ -5,8 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-</head>
+    <link rel="stylesheet" href="loginPage.css">
+    <script src="https://kit.fontawesome.com/9d557a9fdd.js" crossorigin="anonymous"></script> 
+    <script src="loginPage.js"></script>
+
+    </head>
+<h1>Hi-Tech-ish</h1>
 <body>
-    Hi-Tech-ish
+    
+    <div class="loginForm">
+        <form method="post" class="form " id="login" onsubmit="loginfunc()">
+            <h2>Login</h2>
+            <div class="txt_field">
+                <input type="text" id= "Username"onfocus="this.value=''"name="username"required>
+                <span></span>
+                <label>Username</label>
+            </div>
+            <br>
+            <div class="txt_field">
+                <input type="password" id="Password"onfocus="this.value=''"name="password" required>
+                <span></span>
+
+                <label>Password</label>
+            </div>
+            <div class="password">
+                <a href="./" class="p" id="linkCreate">Don't have an account? Create Account</a></div>
+            <button class="form_button" type="submit" id="loginButton">Login</button>
+            
+
+    </form>
+    <form class ="form form--hidden"method="post" id="createAccount" onsubmit="signup()">
+        <h2 class="form_title">Create Account</h2>
+        <div class="txt_field">
+            <input id="createUsername" onfocus="this.value=''" type="text" required>
+            <span></span>
+            <label>Username</label>
+        </div>
+        <br>
+        <div class="txt_field">
+            <input id="createPassword" onfocus="this.value=''" type="password" required>
+            <span></span>
+
+            <label>Password</label>
+        </div>
+        <div class="txt_field">
+            <input type="password" onfocus="this.value=''" required>
+            <span></span>
+
+            <label>Confirm Password</label>
+        </div>
+        <div class="password">
+            <a href="./" class="p" id="linkLogin">Already have an Account? Sign in</a></div>
+        <button class="form_button" type="submit" id="createButton" >Create</button>
+        
+
+</form>
+    </div>
+
 </body>
+<footer id="footer">
+    
+    <div class="aboutUs">
+    <p><span>About us</span><br>
+        Our company has created a web page to help people keep diaries online.
+        We have talented team to provide best experiences.</p>
+    </div>
+    <div class="followUs">
+        <p>
+   <span> Follow Us</span><br>
+    <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a> 
+    <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+    <a href="#" class="facebook"><i class="fa-brands fa-square-facebook"></i></a>
+    <a href="#" class="discord"><i class="fa-brands fa-discord"></i></a>
+    <a href="#" class="weixin"><i class="fa-brands fa-weixin"></i></a>
+    <a href="#" class="tiktok"><i class="fa-brands fa-tiktok"></i></a><br>
+    &copy;copyright: Hi-Tech-ish private policy<br>
+    Contact: <u>905-123-1234</u><br>
+    Email: <u>Hi-Tech-ish@gmail.com</u><br><br> 
+</p> 
+</div>
+        
+    
+</footer>
+
 </html>
